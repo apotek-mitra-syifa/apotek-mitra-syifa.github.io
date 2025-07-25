@@ -23,15 +23,15 @@ const Footer = () => {
             <div className="space-y-3">
               <div className="flex items-center justify-center">
                 <Phone className="h-4 w-4 mr-2 text-primary-light" />
-                <span className="text-primary-foreground/90">(021) 123-4567</span>
+                <span className="text-primary-foreground/90">08542007123</span>
               </div>
               <div className="flex items-center justify-center">
                 <Mail className="h-4 w-4 mr-2 text-primary-light" />
-                <span className="text-primary-foreground/90">info@mitrasyifa.com</span>
+                <span className="text-primary-foreground/90">apotekmitrasyifa@gmail.com</span>
               </div>
               <div className="flex items-center justify-center">
                 <MapPin className="h-4 w-4 mr-2 text-primary-light" />
-                <span className="text-primary-foreground/90">Jl. Kesehatan No. 123</span>
+                <span className="text-primary-foreground/90">Jl. Mastrip, Srengat, Blitar</span>
               </div>
             </div>
           </div>

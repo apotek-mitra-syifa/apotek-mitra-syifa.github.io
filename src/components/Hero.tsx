@@ -4,12 +4,12 @@ import heroImage from "@/assets/pharmacy-hero.jpg";
 
 const Hero = () => {
   const handleMapClick = () => {
-    // Replace with actual Google Maps link for Apotek Mitra Syifa
-    window.open("https://maps.google.com", "_blank");
+    // Real Google Maps link for Apotek Mitra Syifa in Blitar
+    window.open("https://maps.google.com/search/Jl.+Mastrip+RT.02+RW.01+Togogan+I+Srengat+Blitar+Jawa+Timur", "_blank");
   };
 
   return (
-    <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
+    <section id="home" className="relative min-h-screen flex items-center justify-center overflow-hidden pt-16">
       {/* Hero Background */}
       <div className="absolute inset-0 bg-gradient-hero">
         <img 

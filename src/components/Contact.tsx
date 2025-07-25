@@ -6,19 +6,19 @@ const Contact = () => {
     {
       icon: Phone,
       title: "Telepon",
-      info: "(021) 123-4567",
+      info: "08542007123",
       description: "Hubungi kami untuk konsultasi"
     },
     {
       icon: MapPin,
       title: "Alamat",
-      info: "Jl. Kesehatan No. 123, Jakarta",
-      description: "Lokasi mudah dijangkau"
+      info: "Jl. Mastrip, RT.02/RW.01, Togogan I",
+      description: "Srengat, Kab. Blitar, Jawa Timur 66117"
     },
     {
       icon: Mail,
       title: "Email",
-      info: "info@mitrasyifa.com",
+      info: "apotekmitrasyifa@gmail.com",
       description: "Kirim pertanyaan Anda"
     },
     {
@@ -30,7 +30,7 @@ const Contact = () => {
   ];
 
   return (
-    <section className="py-20 bg-background">
+    <section id="contact" className="py-20 bg-background">
       <div className="container mx-auto px-4">
         <div className="text-center mb-16 animate-fade-in">
           <h2 className="text-4xl md:text-5xl font-bold text-foreground mb-4">
@@ -62,7 +62,7 @@ const Contact = () => {
           <Button 
             size="lg"
             className="bg-gradient-primary hover:opacity-90 transition-all duration-300 hover:scale-105 shadow-button px-8 py-4 text-lg font-semibold"
-            onClick={() => window.open("https://maps.google.com", "_blank")}
+            onClick={() => window.open("https://maps.google.com/search/Jl.+Mastrip+RT.02+RW.01+Togogan+I+Srengat+Blitar+Jawa+Timur", "_blank")}
           >
             <MapPin className="mr-2 h-5 w-5" />
             Kunjungi Apotek Kami

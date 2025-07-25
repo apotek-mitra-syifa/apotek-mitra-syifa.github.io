@@ -23,7 +23,7 @@ const Services = () => {
   ];
 
   return (
-    <section className="py-20 bg-gradient-card relative">
+    <section id="services" className="py-20 bg-gradient-card relative">
       <div className="container mx-auto px-4">
         {/* Section Header */}
         <div className="text-center mb-16 animate-fade-in">
