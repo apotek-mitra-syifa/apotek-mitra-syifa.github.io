@@ -61,11 +61,12 @@ const Contact = () => {
         <div className="text-center">
           <Button 
             size="lg"
-            className="bg-gradient-primary hover:opacity-90 transition-all duration-300 hover:scale-105 shadow-button px-8 py-4 text-lg font-semibold"
-            onClick={() => window.open("https://maps.google.com/search/Jl.+Mastrip+RT.02+RW.01+Togogan+I+Srengat+Blitar+Jawa+Timur", "_blank")}
+            className="bg-gradient-primary hover:opacity-90 transition-all duration-300 hover:scale-105 shadow-button px-8 py-4 text-lg font-semibold group relative overflow-hidden"
+            onClick={() => window.open("https://maps.app.goo.gl/DxKXAEn7HawBiteb6", "_blank")}
           >
-            <MapPin className="mr-2 h-5 w-5" />
-            Kunjungi Apotek Kami
+            <div className="absolute inset-0 bg-gradient-to-r from-primary-glow/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+            <MapPin className="mr-2 h-5 w-5 group-hover:animate-bounce relative z-10" />
+            <span className="relative z-10">Kunjungi Apotek Kami</span>
           </Button>
         </div>
       </div>

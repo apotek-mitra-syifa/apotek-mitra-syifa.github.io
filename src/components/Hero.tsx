@@ -1,11 +1,11 @@
 import { MapPin } from "lucide-react";
 import { Button } from "./ui/button";
 import heroImage from "@/assets/pharmacy-hero.jpg";
+import CountdownTimer from "./CountdownTimer";
 
 const Hero = () => {
   const handleMapClick = () => {
-    // Real Google Maps link for Apotek Mitra Syifa in Blitar
-    window.open("https://maps.google.com/search/Jl.+Mastrip+RT.02+RW.01+Togogan+I+Srengat+Blitar+Jawa+Timur", "_blank");
+    window.open("https://maps.app.goo.gl/DxKXAEn7HawBiteb6", "_blank");
   };
 
   return (
@@ -36,15 +36,20 @@ const Hero = () => {
             onClick={handleMapClick}
             size="lg"
             variant="secondary"
-            className="bg-white/95 text-primary hover:bg-white hover:scale-105 transition-all duration-300 shadow-button px-8 py-4 text-lg font-semibold"
+            className="bg-white/95 text-primary hover:bg-white hover:scale-105 transition-all duration-300 shadow-button px-8 py-4 text-lg font-semibold group"
           >
-            <MapPin className="mr-2 h-5 w-5" />
-            Lihat Lokasi di Maps
+            <MapPin className="mr-2 h-5 w-5 group-hover:text-primary-glow transition-colors" />
+            <span className="group-hover:text-primary-glow transition-colors">Lihat Lokasi di Maps</span>
           </Button>
         </div>
         
+        {/* Countdown Timer */}
+        <div className="mt-8 max-w-lg mx-auto">
+          <CountdownTimer />
+        </div>
+
         {/* Business Hours Badge */}
-        <div className="mt-8 inline-block bg-white/10 backdrop-blur-sm rounded-full px-6 py-3 border border-white/20">
+        <div className="mt-6 inline-block bg-white/10 backdrop-blur-sm rounded-full px-6 py-3 border border-white/20">
           <p className="text-white/90 font-medium">
             Buka Setiap Hari: <span className="font-bold text-primary-light">07:00 - 21:00</span>
           </p>

@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { Menu, X, Heart, Phone, MapPin, Github } from "lucide-react";
+import { Menu, X, Phone, MapPin } from "lucide-react";
 import { Button } from "./ui/button";
 
 const Navigation = () => {
@@ -12,12 +12,9 @@ const Navigation = () => {
   };
 
   const handleMapClick = () => {
-    window.open("https://maps.google.com/search/Jl.+Mastrip+RT.02+RW.01+Togogan+I+Srengat+Blitar+Jawa+Timur", "_blank");
+    window.open("https://maps.app.goo.gl/DxKXAEn7HawBiteb6", "_blank");
   };
 
-  const handleGithubClick = () => {
-    window.open("https://github.com", "_blank");
-  };
 
   const scrollToSection = (sectionId: string) => {
     const element = document.getElementById(sectionId);
@@ -31,7 +28,11 @@ const Navigation = () => {
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
           <div className="flex items-center space-x-2">
-            <Heart className="h-8 w-8 text-primary" />
+            <img 
+              src="/logo/logo.png" 
+              alt="Apotek Mitra Syifa Logo" 
+              className="h-8 w-8 object-contain"
+            />
             <span className="text-xl font-bold text-foreground">Apotek Mitra Syifa</span>
           </div>
 
@@ -60,20 +61,12 @@ const Navigation = () => {
           {/* Action Buttons */}
           <div className="hidden md:flex items-center space-x-3">
             <Button
-              variant="ghost"
-              size="sm"
-              onClick={handleGithubClick}
-              className="text-muted-foreground hover:text-foreground"
-            >
-              <Github className="h-4 w-4" />
-            </Button>
-            <Button
               variant="outline"
               size="sm"
               onClick={handleMapClick}
-              className="border-primary text-primary hover:bg-primary hover:text-primary-foreground"
+              className="border-primary text-primary hover:bg-primary hover:text-primary-foreground transition-all duration-300 hover:scale-105 group"
             >
-              <MapPin className="mr-1 h-4 w-4" />
+              <MapPin className="mr-1 h-4 w-4 group-hover:animate-pulse" />
               Lokasi
             </Button>
             <Button
@@ -122,9 +115,9 @@ const Navigation = () => {
                   variant="outline"
                   size="sm"
                   onClick={handleMapClick}
-                  className="border-primary text-primary hover:bg-primary hover:text-primary-foreground"
+                  className="border-primary text-primary hover:bg-primary hover:text-primary-foreground transition-all duration-300 hover:scale-105 group"
                 >
-                  <MapPin className="mr-1 h-4 w-4" />
+                  <MapPin className="mr-1 h-4 w-4 group-hover:animate-pulse" />
                   Lokasi
                 </Button>
                 <Button

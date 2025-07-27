@@ -17,7 +17,7 @@ const Services = () => {
     {
       icon: Heart,
       title: "Layanan BPJS",
-      description: "Bermitra dengan BPJS Kesehatan untuk memberikan akses obat yang terjangkau bagi peserta BPJS.",
+      description: "Sejak 2022 bermitra dengan BPJS Kesehatan untuk memberikan akses obat yang terjangkau bagi peserta BPJS.",
       features: ["Obat program BPJS", "Resep rujukan", "Obat kronis", "Pelayanan sesuai formularium"]
     }
   ];
